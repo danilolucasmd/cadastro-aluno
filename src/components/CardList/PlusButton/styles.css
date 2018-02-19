@@ -1,0 +1,10 @@
+:local(.component) .card {
+  cursor: pointer; }
+  :local(.component) .card .plus-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%; }
+    :local(.component) .card .plus-button img {
+      width: 200px; }

@@ -1,0 +1,30 @@
+{
+  "name": "cadastro-aluno",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "bootstrap": "^4.0.0",
+    "react": "^16.1.1",
+    "react-dom": "^16.1.1",
+    "react-redux": "^5.0.7",
+    "react-scripts": "1.0.17",
+    "react-webcam": "^0.2.0",
+    "reactstrap": "^5.0.0-beta",
+    "redux": "^3.7.2",
+    "uuid": "^3.2.1"
+  },
+  "scripts": {
+    "build-css": "node-sass-chokidar src/ -o src/",
+    "watch-css": "npm run build-css && node-sass-chokidar src/ -o src/ --watch --recursive",
+    "start-js": "NODE_PATH=src/ react-scripts start",
+    "start": "npm-run-all -p watch-css start-js",
+    "build-js": "NODE_PATH=src/ react-scripts build",
+    "build": "npm-run-all build-css build-js",
+    "test": "NODE_PATH=src/ react-scripts test --env=jsdom",
+    "eject": "NODE_PATH=src/ react-scripts eject"
+  },
+  "devDependencies": {
+    "node-sass-chokidar": "0.0.3",
+    "npm-run-all": "^4.1.2"
+  }
+}

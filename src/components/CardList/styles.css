@@ -1,0 +1,7 @@
+:local(.component) .card {
+  height: 330px;
+  margin: 10px;
+  padding: 10px; }
+
+:local(.component) .pointer {
+  cursor: pointer; }
